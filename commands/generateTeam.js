@@ -32,26 +32,29 @@ module.exports = {
                 return
             }
             var voicePlayers = voice.members;
-            console.log(voicePlayers);
             var player = [];
             voicePlayers.forEach(member => {
-                console.log(member)
                 if(member.nickname != null){
                     player.push(member.nickname);
                 }else{
                     player.push(member.user.username)
                 }
             })
-            console.log(player);
         }
         shuffle(player);
         var team1 = "";
+        var team2 = "";
         for(let i=0; i<player.length/2; i++){
             team1 += `\n${player[i]}`;
         }
-        var team2 = "";
-        for(let i=Math.floor(player.length/2)+1; i<player.length; i++){
-            team2 += `\n${player[i]}`;
+        if(player.length%2 == 0){
+            for(let i=Math.floor(player.length/2); i<player.length; i++){
+                team2 += `\n${player[i]}`;
+            }
+        }else{
+            for(let i=Math.floor(player.length/2+1); i<player.length; i++){
+                team2 += `\n${player[i]}`;
+            }
         }
         const embed = new EmbedBuilder()
             .setColor(0x2079b0)
