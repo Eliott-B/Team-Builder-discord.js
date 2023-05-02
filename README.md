@@ -18,6 +18,15 @@ git clone https://github.com/Eliott-B/Team-Builder-discord.js.git
 
 2. Move the file 'generateTeam.js' to your commands folder.
 
+## SCREENSHOTS
+
+![Screenshot 1](screenshots/Screenshot_1.png)
+![Screenshot 2](screenshots/Screenshot_2.png)
+![Screenshot 3](screenshots/Screenshot_3.png)
+![Screenshot 4](screenshots/Screenshot_4.png)
+![Screenshot 5](screenshots/Screenshot_5.png)
+
+
 ## CONTRIBUTORS
 
 - [Eliott-B](https://github.com/Eliott-B)
